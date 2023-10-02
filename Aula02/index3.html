@@ -21,13 +21,26 @@
         JavaScript obtemos o valor digitado no campo (input) e multiplicamos o valor por 0.9 que dá 10% e assim temos
         o valor final com desconto de 10%
         */
+
+        /*
+        Criamos trÊs variáveis para relacionar os elementos do formulário e assim realizar os calculos com mais facilidade. O 
+        comando document faz referência ao meu documento HTML. O comanto: getElementsByTagName diz que estamos pegando um elemento
+        html por seu nome de tag - neste exemplo foi nenessário dizer qual a posição da tag que se deseja trabalhar.
+        */
         var valorproduto = document.getElementsByTagName("input")[0]
         var calcular = document.getElementsByTagName("input")[1]
         var resultado = document.getElementsByTagName("p")[0]
 
+        /*
+        Calcular é a referência ao botão calcular que está no formulário. Quando o usuário clicar(onclick) no botão será disparado
+        uma execução (function) que realiza o calculo do valor do produto * 0.9, ou seja, desconta 10% do valor do produto.
+        O resultado é uma referencia ao p(paragrafo) que está no formulário e dentro dele(innerHtml) vamos colocar o resultado
+        do cáuculo.
+        */
+
         calcular.onclick =function(){
             resultado.innerHTML = valorproduto.value * 0.9
-        }
+        };
 
     </script>
     

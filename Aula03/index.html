@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="radio" name="fundo" id="vermelho" value="vermelho"> Vermelho
+        <input type="radio" name="fundo" id="verde" value="verde"> Verde
+        <input type="radio" name="fundo" id="azul" value="azul"> Azul
+    </form>
+    
+    <script>
+
+        var rdvermelho = document.getElementById("vermelho");
+        var rdverde = document.getElementById("verde");
+        var rdazul = document.getElementById("azul");
+
+        rdvermelho.onclick = function(){
+            document.body.style.backgroundColor = "#f00";
+
+        };
+
+        rdverde.onclick = function(){
+            document.body.style.backgroundColor = "#0f0";
+
+        };
+
+        rdazul.onclick = function(){
+            document.body.style.backgroundColor = "#00f";
+
+        };
+
+    </script>
+</body>
+</html>
